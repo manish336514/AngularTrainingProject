@@ -15,7 +15,7 @@
         Index:{{ n }}
         <!-- n can be used locally -->
         Name:{{ veg.name }} Price:{{ veg.price }}
-        <span><button>X</button> </span>
+        <span><button (click)="deleteVeg(n)">X</button> </span>
       </li>
     </ul>
   </div>

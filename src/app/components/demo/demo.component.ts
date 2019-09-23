@@ -25,4 +25,7 @@ export class DemoComponent implements OnInit {
   bntClicked() {
     alert("The Button Was Clicked");
   }
+  deleteVeg(index: number) {
+    this.vegetables.splice(index, 1);
+  }
 }
