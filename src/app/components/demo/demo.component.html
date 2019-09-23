@@ -7,7 +7,9 @@
   <div>
     <h4>List of Vegetables</h4>
     <ul>
-      <li *ngFor="let veg of vegetables">
+      <li *ngFor="let veg of vegetables; index as n">
+        Index:{{ n }}
+        <!-- n can be used locally -->
         Name:{{ veg.name }} Price:{{ veg.price }}
       </li>
     </ul>
