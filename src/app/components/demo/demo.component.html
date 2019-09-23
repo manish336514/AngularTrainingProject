@@ -3,4 +3,13 @@
 <div>
   <h3>Hello Form Demo Component</h3>
   Youar messegae is {{ message }}
+  <p></p>
+  <div>
+    <h4>List of Vegetables</h4>
+    <ul>
+      <li *ngFor="let veg of vegetables">
+        Name:{{ veg.name }} Price:{{ veg.price }}
+      </li>
+    </ul>
+  </div>
 </div>
