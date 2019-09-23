@@ -21,4 +21,8 @@ export class DemoComponent implements OnInit {
       { name: "Patato", price: 25 }
     ];
   }
+
+  bntClicked() {
+    alert("The Button Was Clicked");
+  }
 }

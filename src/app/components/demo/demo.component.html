@@ -3,7 +3,10 @@
 <div>
   <h3>Hello Form Demo Component</h3>
   Youar messegae is {{ message }}
-  <p></p>
+  <p>
+    <button (click)="bntClicked()">Click Me !!</button>
+    <!-- Javascript event , wrapped version  -->
+  </p>
   <div>
     <h4>List of Vegetables</h4>
     <ul>
@@ -11,6 +14,7 @@
         Index:{{ n }}
         <!-- n can be used locally -->
         Name:{{ veg.name }} Price:{{ veg.price }}
+        <span><button>X</button> </span>
       </li>
     </ul>
   </div>
