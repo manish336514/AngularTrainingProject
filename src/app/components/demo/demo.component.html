@@ -4,7 +4,7 @@
   <h3>Hello Form Demo Component</h3>
   Youar messegae is {{ message }}
   <p>
-    <button (click)="bntClicked()">Click Me !!</button>
+    <button (click)="bntClicked($event)">Click Me !!</button>
     <!-- "bntClicked()"= put in "" for event binding -->
     <!-- Javascript event , wrapped version  -->
   </p>
@@ -18,5 +18,18 @@
         <span><button (click)="deleteVeg(n)">X</button> </span>
       </li>
     </ul>
+  </div>
+
+  <div>
+    <h5>Add Vegetables</h5>
+    <label> Name:<input type="text" #name /> </label>
+    <br />
+    <label> Price:<input type="text" #price /> </label>
+    <br />
+    <button
+      (click)="addVeg(name.value, price.value); name.value = price.value = ''"
+    >
+      Add
+    </button>
   </div>
 </div>

@@ -22,10 +22,22 @@ export class DemoComponent implements OnInit {
     ];
   }
 
-  bntClicked() {
-    alert("The Button Was Clicked");
+  bntClicked(event) {
+    // alert("The Button Was Clicked");
+    console.log(event);
   }
   deleteVeg(index: number) {
     this.vegetables.splice(index, 1);
+  }
+
+  addVeg(name, price) {
+    console.log("veg", name, price);
+
+    var addvegitable = {
+      name: name,
+      price: price
+    };
+    console.log("addvegitable", addvegitable);
+    this.vegetables.push(addvegitable);
   }
 }
